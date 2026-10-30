@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+#aboutTitle {
+  font-family: "Poppins", cursive;
+  text-align: center;
+  color: yellow;
+  font-size: large;
+  transition: 1.5s;
+  padding-top: 3rem;
+}
+.aboutHeading {
+  display: inline-block; /* Keeps the line exactly the width of the text words */
+  border-bottom: 2px solid #c4cc04;
+}
+.aboutMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0rem;
+  padding-bottom: 3rem;
+  background-color: #282828;
+}
+.aboutSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  padding: 0rem 3rem;
+}
+.aboutDesc {
+  font-family: "poppins", cursive;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+  font-size: 30px;
+  word-spacing: 5px;
+  padding-bottom: 2rem;
+}
+.aboutSkill {
+  color: red;
+  cursor: pointer;
+}
+.aboutName {
+  color: beige;
+  cursor: pointer;
+}
+.React {
+  color: rgb(63, 189, 239);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .aboutSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutDesc {
+    font-size: medium;
+    font-family: "poppins", cursive;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 0rem;
+    font-weight: 800;
+    font-size: larger;
+    word-spacing: 2px;
+  }
+}

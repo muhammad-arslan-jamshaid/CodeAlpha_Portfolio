@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  font-family: "Poppins", cursive;
+}
+.projectMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0rem;
+  padding-bottom: 3rem;
+  background-color: rgb(30, 30, 30);
+}
+.projectImg {
+    
+  align-items: center;
+  justify-content: center;
+}
+
+#projectTitle {
+  margin-top: 4rem;
+  padding: 0rem 0rem 0rem 0rem;
+  text-align: center;
+  color: yellow;
+  transition: 1.5s;
+}
+.projectHeading {
+  display: inline-block; /* Keeps the line exactly the width of the text words */
+  border-bottom: 2px solid #c4cc04;
+}
+
+.projectDesc {
+  padding: 2rem;
+  font-size: larger;
+  text-align: center;
+}
+.reactTitle {
+  color: rgb(63, 189, 239);
+  cursor: pointer;
+}
+.projectsImages {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1980px) {
+  .projectDesc {
+    padding: 2rem;
+    font-size: larger;
+    text-align: center;
+  }
+
+  .projectImg {
+    width: 20rem;
+    margin: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+  }
+  .projectImg:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+    border-color: aliceblue;
+    box-shadow: 0px 0px 10px 5px yellow;
+  }
+  .projectDesc {
+    padding: 2rem;
+    font-size: medium;
+    text-align: center;
+  }
+}

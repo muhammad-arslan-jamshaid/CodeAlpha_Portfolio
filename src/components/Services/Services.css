@@ -1,0 +1,82 @@
+#servicesTitle {
+  font-family: "Poppins", cursive;
+  text-align: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  color: yellow;
+  font-size: large;
+  transition: 1.5s;
+}
+.servicesHeading {
+  display: inline-block; /* Keeps the line exactly the width of the text words */
+  border-bottom: 2px solid #c4cc04;
+}
+
+.servicesMain {
+  background-color: #1c1c1c; /* Dark charcoal background matching your layout */
+  padding: 60px 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif; /* Clean, modern font */
+}
+/* The Responsive Grid Configuration */
+.servicesContainer {
+  display: grid;
+  gap: 20px;
+  width: 95%; /* Increased width to let rectangles stretch wider */
+  max-width: 1300px; /* Higher maximum limit for wide desktop views */
+  margin: 0 auto;
+
+  /* MOBILE DEFAULT */
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/* Updated Design For The Rectangular Cards */
+.servicesCard {
+  background-color: #c4cc04;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.4;
+
+  /* 📐 RECTANGULAR RATIO: Lower height forces a wide landscape look */
+  min-height: 130px;
+  padding: 20px 24px;
+
+  border-radius: 16px; /* Slightly reduced corner radius for a sharper look */
+  text-align: center;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Smooth hover transition */
+  transition:
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Hover Effect */
+.servicesCard:hover {
+  transform: translateY(-5px);
+  border: 2px solid aliceblue;
+  box-shadow: 0px 0px 10px 5px yellow;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+
+/* TABLETS: 2x2 rectangular grid */
+@media (min-width: 650px) {
+  .servicesContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* DESKTOPS: 4 wide horizontal rectangles side-by-side */
+@media (min-width: 1025px) {
+  .servicesContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

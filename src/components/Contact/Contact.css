@@ -1,0 +1,80 @@
+#contactTitle {
+  font-family: "Poppins", cursive;
+  text-align: center;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  color: yellow;
+  font-size: large;
+  transition: 1.5s;
+}
+.contactHeading {
+  display: inline-block; /* Keeps the line exactly the width of the text words */
+  border-bottom: 2px solid #c4cc04;
+}
+.mainContact {
+  background-color: #282828;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.contactDesc {
+  padding: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100vw;
+  max-width: 100rem;
+}
+.name,
+.email,
+.msg {
+  font-size: medium;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgb(40, 40, 40);
+  border: 1px solid white;
+}
+.submitbtn {
+  background: white;
+  border: none;
+  padding: 0.75rem 3.5rem;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  font-weight: 600;
+  transition: 0.5s ease-in-out;
+}
+.submitbtn:hover {
+  background-color: rgb(210, 210, 0);
+  color: black;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 100rem;
+    padding: 2rem;
+  }
+  #contactTitle {
+    padding-top: 2rem;
+  }
+}
